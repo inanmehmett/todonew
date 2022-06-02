@@ -1,0 +1,65 @@
+body {
+  background-color: grey;
+  text-align: center;
+}
+#logo {
+  height: 120px;
+}
+#logo:hover {
+  transform: rotate(90deg);
+  transition-duration: 1s;
+}
+#navbar {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 20%;
+}
+.navbar-brand {
+  color: black;
+  display: block;
+  padding: 4px;
+}
+.navbar-brand:hover {
+  color: white;
+  display: block;
+  background-color: #333;
+  border-radius: 4px;
+}
+#section-list {
+  text-align: center;
+  margin-top: 3%;
+}
+#section-list h1 {
+  margin-bottom: 50px;
+}
+#button-Delete {
+  float: right;
+  margin-right: 5%;
+}
+#tablemain {
+  text-align: center;
+  margin: 20px auto;
+  clear: both;
+}
+#todoname {
+  padding-right: 400px;
+}
+#todocontrol {
+  padding-left: 400px;
+}
+.td1 {
+  float: left;
+  margin: 10px;
+}
+.td2 {
+  float: right;
+  margin: 15px;
+}
+#section-add {
+  text-align: center;
+  margin-top: 20%;
+}
+footer {
+  text-align: center;
+  margin-top: 10%;
+}
