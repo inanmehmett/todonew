@@ -7,29 +7,38 @@ const checkboxs = document.querySelector("#td2")
 
 buttonAdd.addEventListener("click", function AddingGoal(){
    if(inputAdd.value == ""){
-      alert("Lütfeb bir değer girin!");
+      alert("Lütfen bir değer girin!");
    }else{
    let tdname = document.createElement("td");
    let tdcontrol = document.createElement("input");
    
    tdname.textContent =inputAdd.value;
-   tdname.setAttribute("class", 'td1');
+   tdname.setAttribute("class", 'tdx');
    tdcontrol.type = "checkbox";
 
    let tr = document.createElement("tr");
-   tdcontrol.setAttribute("class", 'td2');
+   tdcontrol.setAttribute("class", 'tdy');
    
    tr.appendChild(tdname);
    tr.appendChild(tdcontrol);
    
    tableMain.appendChild(tr);
-
+   document.getElementById("input-Add").value = "";
+   
    };
+   
 });
 
-deleteAdd.addEventListener("onclick", function(){
-if (checkboxs.value) {
-   
-}
+deleteAdd.addEventListener("click", function(){
+
+   var checkedbox = document.getElementsByClassName("tdy");
+   for (i=0; i<checkedbox.length; i++){
+      if(checkedbox[i].checked == true){
+         checkedbox[i].parentNode.remove();
+      }
+      else{
+         alert("Please Select A Goal!"); 
+      }
+   }
 
 })
